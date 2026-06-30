@@ -7,16 +7,16 @@ export default function EnquiryForm() {
   const [submitted, setSubmitted] = useState(false)
 
   return (
-    <section id="enquiry" className="max-w-4xl mx-auto px-8 py-20">
+    <section id="enquiry" className="max-w-4xl mx-auto px-4 sm:px-8 py-12 sm:py-20">
 
-      <div className="grid grid-cols-2 gap-16 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
         {/* Left side */}
         <div>
           <p className="text-blue-600 text-xs font-semibold uppercase tracking-widest mb-3">
             Get In Touch
           </p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Start Your Child's Journey Today
           </h2>
           <p className="text-gray-500 font-light text-sm mb-8">
@@ -40,7 +40,7 @@ export default function EnquiryForm() {
         </div>
 
         {/* Right side — form */}
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-7">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 sm:p-7">
           {submitted ? (
             <div className="text-center py-8">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
@@ -55,7 +55,7 @@ export default function EnquiryForm() {
           ) : (
             <div className="space-y-4">
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-medium text-gray-700 mb-1.5">
                     Parent's Name
@@ -89,7 +89,7 @@ export default function EnquiryForm() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-medium text-gray-700 mb-1.5">
                     Child's Level

@@ -27,17 +27,17 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="bg-gray-50 py-20">
-      <div className="max-w-4xl mx-auto px-8">
+    <section id="why-us" className="bg-gray-50 py-12 sm:py-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8">
 
         <p className="text-blue-600 text-xs font-semibold uppercase tracking-widest mb-3">
           Why BrightPath
         </p>
-        <h2 className="text-3xl font-bold text-gray-900 mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">
           Learning That Actually Works
         </h2>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {reasons.map(({ icon, title, description }) => (
             <div
               key={title}

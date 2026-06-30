@@ -24,19 +24,19 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="max-w-4xl mx-auto px-8 py-20">
+    <section id="programs" className="max-w-4xl mx-auto px-4 sm:px-8 py-12 sm:py-20">
 
       <p className="text-blue-600 text-xs font-semibold uppercase tracking-widest mb-3">
         What We Offer
       </p>
-      <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
         Programmes for Every Stage
       </h2>
-      <p className="text-gray-500 font-light mb-12">
+      <p className="text-gray-500 font-light mb-8 sm:mb-12">
         Structured learning pathways tailored to each student's level and goals.
       </p>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {programs.map(({ icon, title, description, levels }) => (
           <div
             key={title}
